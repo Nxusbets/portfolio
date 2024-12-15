@@ -1,0 +1,30 @@
+.nav {
+    display: flex; /* Alinea los elementos horizontalmente */
+    justify-content: space-around; /* Espacio uniforme entre elementos */
+    list-style: none; /* Elimina los puntos de la lista */
+    padding: 0; /* Elimina el padding predeterminado */
+    margin: 0; /* Elimina el margen predeterminado */
+    background-color: #333; /* Fondo del navbar */
+    color: white; /* Color del texto */
+}
+
+.nav-item {
+    margin: 0 10px; /* Espaciado entre los elementos */
+}
+
+.nav-link {
+    text-decoration: none; /* Elimina el subrayado */
+    color: white; /* Color del texto */
+    padding: 10px 15px; /* Espaciado interno */
+    display: block; /* Hace que el área clicable sea más grande */
+}
+
+.nav-link:hover {
+    background-color: #555; /* Color de fondo al pasar el mouse */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+.nav-link.disabled {
+    color: gray; /* Color para enlaces deshabilitados */
+    pointer-events: none; /* Hace que el enlace no sea clicable */
+}

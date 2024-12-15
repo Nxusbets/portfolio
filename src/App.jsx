@@ -1,27 +1,27 @@
+import React from 'react';
 import './App.css';
+import Navbar from './frontend/components/Navbar';
+import RepositoriosCard from './frontend/components/Repositorios';
+import "./frontend/styles/Navbar.css";
+import Header from './frontend/components/Header';
+import About from './frontend/components/About';
+import Projects from './frontend/components/Projects';
+import Contact from './frontend/components/Contact';
+import Hero from './frontend/components/Hero';
+import Skills from './frontend/components/Skills';
+
+
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src="Octocat.png" className="App-logo" alt="logo" />
-        <p>
-          GitHub Codespaces <span className="heart">♥️</span> React
-        </p>
-        <p className="small">
-          Edit <code>src/App.jsx</code> and save to reload.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </p>
-      </header>
+        
+        <Hero />
+            <About />
+            <Projects />
+            
+            <Skills />
     </div>
   );
 }

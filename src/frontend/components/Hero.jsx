@@ -2,6 +2,13 @@ import React from "react";
 import { motion } from "framer-motion";
 import "../styles/Hero.css";
 
+const project = {
+    title: "Project",
+    description: "Petwalker is a web application where pet owners can register and add their pets, allowing pet walkers to take care of them when the owners are unavailable. Additionally, anyone interested can sign up as a walker to help the community. Users can schedule walks, select the type of walk, and filter members' locations, among other features. The app was built using React, Bootstrap, Python with Flask, bcrypt, fetch, and other technologies.",
+    link: "https://github.com/Nxusbets"
+    
+};
+
 const Hero = () => {
     return (
         <section className="hero">
@@ -25,13 +32,15 @@ const Hero = () => {
             >
                 Fullstack Developer | Building modern and scalable web applications.
             </motion.p>
-            <motion.button
-                whileHover={{ scale: 1.1, rotate: 5 }}
-                whileTap={{ scale: 0.9 }}
-                className="cta-button"
+            <motion.a
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="project-link"
+              
             >
                 View Projects
-            </motion.button>
+            </motion.a>
         </section>
     );
 };
